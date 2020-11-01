@@ -8,6 +8,9 @@ import { IntervalComponent } from './observable/interval/interval.component';
 import { OfFromComponent } from './observable/of-from/of-from.component';
 import { ToArrayComponent } from './observable/to-array/to-array.component';
 import { CustomComponent } from './observable/custom/custom.component';
+import { MapComponent } from './observable/map/map.component';
+import { PluckComponent } from './observable/pluck/pluck.component';
+import { FilterComponent } from './observable/filter/filter.component';
 
 const routes: Routes = [
   {
@@ -107,6 +110,45 @@ const routes: Routes = [
           },
           {
             label: 'Custom Observable',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'map', component: MapComponent , data: {
+        title: 'Map',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable',
+          },
+          {
+            label: 'Map',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'pluck', component: PluckComponent , data: {
+        title: 'Pluck',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable',
+          },
+          {
+            label: 'Pluck',
+            url: '',
+          },
+        ],
+      }},
+      { path: 'filter', component: FilterComponent , data: {
+        title: 'Filter',
+        breadcrumb: [
+          {
+            label: 'Observable',
+            url: '/observable',
+          },
+          {
+            label: 'Filter',
             url: '',
           },
         ],
